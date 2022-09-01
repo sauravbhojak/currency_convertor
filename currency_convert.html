@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="currenc.css">
+        <title>Currency Converter</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <centre><h1>Currency Converter</h1></centre>   
+        <div class="left-aligned">         
+        <h2 id = "input_amt">Amount to Convert :</h2>
+        </div>
+        <input type="number" class="searchBox" placeholder="0.00" id="oamount">
+            <div id="sel_id">
+            <select class="fromcurrency" name="sel_countr1" id="sel_countr1">
+                <option value="">Select One…</option>
+                            <option value="USD">USD - United States Dollar</option>
+                            <option value="AED">AED - United Arab Emirates</option>
+                            <option value="ARS">ARS - Argentina</option>
+                            <option value="AUD">AUD - Australia</option>
+                            <option value="BGN">BGN - Bulgaria</option>
+                            <option value="BRL">BRL - Brazil</option>
+                            <option value="BSD">BSD - Bahamas</option>
+                            <option value="CAD">CAD - Canada</option>
+                            <option value="CHF">CHF - Switzerland</option>
+                            <option value="CLP">CLP - Chile</option>
+                            <option value="CNY">CNY - China</option>
+                            <option value="COP">COP - Colombia</option>
+                            <option value="CZK">CZK - Czechia</option>
+                            <option value="DKK">DKK - Denmark</option>
+                            <option value="DOP">DOP - Dominican Republic</option>
+                            <option value="EGP">EGP - Egypt, Pallestinian Terretories, Palestine</option>
+                            <option value="EUR">EUR - Germany, Spain, France & 16 more</option>
+                            <option value="FJD">FJD - Fiji</option>
+                            <option value="GBP">GBP - United Kingdom</option>
+                            <option value="GTQ">GTQ - Guatemala</option>
+                            <option value="HKD">HKD - Hong Kong</option>
+                            <option value="HRK">HRK - Croatia</option>
+                            <option value="HUF">HUF - Hungary</option>
+                            <option value="IDR">IDR - Indonesia</option>
+                            <option value="ILS">ILS - Israel</option>
+                            <option value="INR">INR - India</option>
+                            <option value="ISK">ISK - Iceland</option>
+                            <option value="JPY">JPY - Japan</option>
+                            <option value="KRW">KRW - South Koria</option>
+                            <option value="KZT">KZT - Kazakhstan</option>
+                            <option value="MVR">MVR - Maldives</option>
+                            <option value="MXN">MXN - Mexico</option>
+                            <option value="MYR">MYR - Malaysia</option>
+                            <option value="NOK">NOK - Norway</option>
+                            <option value="NZD">NZD - New Zealand</option>
+                            <option value="PAB">PAB - Panama</option>
+                            <option value="PEN">PEN - Peru</option>
+                            <option value="PHP">PHP - Philippines</option>
+                            <option value="PKR">PKR - Pakistan</option>
+                            <option value="PLN">PLN - Poland</option>
+                            <option value="PYG">PYG - Paraguay</option>
+                            <option value="RON">RON - Romania</option>
+                            <option value="RUB">RUB - Russia</option>
+                            <option value="SAR">SAR - Saudi Arabia</option>
+                            <option value="SEK">SEK - Sweden</option>
+                            <option value="SGD">SGD - Singapore</option>
+                            <option value="THB">THB - Thailand</option>
+                            <option value="TRY">TRY - Turkey</option>
+                            <option value="TWD">TWD - Taiwan</option>
+                            <option value="UAH">UAH - Ukraine</option>
+                            <option value="UYU">UYU - Uruguay</option>
+                            <option value="ZAR">ZAR - South Africa</option>
+            </select>
+
+            <select class="tocurrency" name="sel_countr2" id="sel_countr2">
+                <option value="USD">USD - United States Dollar</option>
+                <option value="AED">AED - United Arab Emirates</option>
+                <option value="ARS">ARS - Argentina</option>
+                <option value="AUD">AUD - Australia</option>
+                <option value="BGN">BGN - Bulgaria</option>
+                <option value="BRL">BRL - Brazil</option>
+                <option value="BSD">BSD - Bahamas</option>
+                <option value="CAD">CAD - Canada</option>
+                <option value="CHF">CHF - Switzerland</option>
+                <option value="CLP">CLP - Chile</option>
+                <option value="CNY">CNY - China</option>
+                <option value="COP">COP - Colombia</option>
+                <option value="CZK">CZK - Czechia</option>
+                <option value="DKK">DKK - Denmark</option>
+                <option value="DOP">DOP - Dominican Republic</option>
+                <option value="EGP">EGP - Egypt, Pallestinian Terretories, Palestine</option>
+                <option value="EUR">EUR - Germany, Spain, France & 16 more</option>
+                <option value="FJD">FJD - Fiji</option>
+                <option value="GBP">GBP - United Kingdom</option>
+                <option value="GTQ">GTQ - Guatemala</option>
+                <option value="HKD">HKD - Hong Kong</option>
+                <option value="HRK">HRK - Croatia</option>
+                <option value="HUF">HUF - Hungary</option>
+                <option value="IDR">IDR - Indonesia</option>
+                <option value="ILS">ILS - Israel</option>
+                <option value="INR">INR - India</option>
+                <option value="ISK">ISK - Iceland</option>
+                <option value="JPY">JPY - Japan</option>
+                <option value="KRW">KRW - South Koria</option>
+                <option value="KZT">KZT - Kazakhstan</option>
+                <option value="MVR">MVR - Maldives</option>
+                <option value="MXN">MXN - Mexico</option>
+                <option value="MYR">MYR - Malaysia</option>
+                <option value="NOK">NOK - Norway</option>
+                <option value="NZD">NZD - New Zealand</option>
+                <option value="PAB">PAB - Panama</option>
+                <option value="PEN">PEN - Peru</option>
+                <option value="PHP">PHP - Philippines</option>
+                <option value="PKR">PKR - Pakistan</option>
+                <option value="PLN">PLN - Poland</option>
+                <option value="PYG">PYG - Paraguay</option>
+                <option value="RON">RON - Romania</option>
+                <option value="RUB">RUB - Russia</option>
+                <option value="SAR">SAR - Saudi Arabia</option>
+                <option value="SEK">SEK - Sweden</option>
+                <option value="SGD">SGD - Singapore</option>
+                <option value="THB">THB - Thailand</option>
+                <option value="TRY">TRY - Turkey</option>
+                <option value="TWD">TWD - Taiwan</option>
+                <option value="UAH">UAH - Ukraine</option>
+                <option value="UYU">UYU - Uruguay</option>
+                <option value="ZAR">ZAR - South Africa</option>
+            </select>
+            </div>
+            <button class="darkmode" id="mode" onclick="darkmode()">Change Mode</button>
+        <div class="left-aligned">
+            <button class="convert" id="convert" onclick="()">Convert</button>
+            <button class="btn" id="reset" onclick="clearVal()">Reset</button>
+        </div>
+        <div id = "finalAmount">
+            <h2>Converted Amount : <span class="finalValue" style="color:green;"></span></h2>
+        </div>
+        <script src="currenc.js"></script>
+    </body>
+</html>
